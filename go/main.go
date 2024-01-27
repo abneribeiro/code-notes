@@ -13,6 +13,12 @@ type Person struct {
 
 func main() {
 	primitvo := Person{name: "John", age: 20, profession: "Programmer", isMAle: true}
-	fmt.Println(primitvo)
+	
+	fmt.Printf("primitvo=%v\n",primitvo)
+	printNAme(primitvo)
 
+}
+
+func printNAme(p Person) {
+	fmt.Printf("Name=%v\n", p.name)
 }
